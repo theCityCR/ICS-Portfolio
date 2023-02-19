@@ -13,33 +13,46 @@
         </h1>
     </div>
     <div id="tabs">
-        <div>
-            <button id="HomeButton">
-                <a href="Main.html">Home</a>
+        <button id="HomeButton" onclick="ll('Main.html')">
+            Home
+        </button>
+        <div id="tabsRight">
+            <button onclick="ll('Tutorials.html')">
+                Tutorials
+            </button>
+            <button onclick="ll('AboutMe.html')">
+                About Me
+            </button>
+            <button onclick="ll('Bibliography.html')">
+                Bibliography
             </button>
         </div>
-        <div id="tabsRight">
-            <div>
-                <button>
-                    <a href="">Tutorials</a>
-                </button>
-                <div>
-                    <a href="">OOP</a>
-                    <a href="">Arrays and Arraylists</a>
-                    <a href="">Search and Sort</a>
-                    <a href="">Recursion</a>
-                </div>
-            </div>
-            <div>
-                <button>
-                    <a href="">About Me</a>
-                </button>
-            </div>
-            <div>
-                <button>
-                    <a href="">Bibliography</a>
-                </button>
-            </div>
+    </div>
+    <div id="expandedMenu">
+        <div id="tutorialsExpandedMenu">
+            <button onclick="ll('OOP.html')">
+                OOP
+            </button>
+            <button onclick="ll('Arrays.html')">
+                Data Structures
+            </button>
+            <button onclick="ll('SearchAndSort.html')">
+                Search and Sort
+            </button>
+            <button onclick="ll('Recursion.html')">
+                Recursion
+            </button>
+        </div>
+        <div id="aboutMeExpandedMenu">
+            <button onclick="ll('Works.html')">
+                My Works
+            </button>
+            <button onclick="ll('Learning.html')">
+                Other Learning
+            </button>
+            <button onclick="ll('Achievements.html')">
+                My Achievements
+            </button>
         </div>
     </div>
 </header>
