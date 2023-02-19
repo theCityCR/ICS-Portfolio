@@ -1,1 +1,59 @@
+body {
+    margin: 0;
+}
 
+/* Style the tab */
+#tabs {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Style the buttons that are used to open the tab content */
+#tabs button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    width: 150px;
+    transition: 0.3s;
+}
+
+#tabs div div {
+    display: inline-block;
+}
+
+#tabsRight {
+    float: right;
+}
+
+#HomeButton {
+    position: absolute;
+}
+
+#tabs div div div {
+    display: none;
+}
+
+/* Change background color of buttons on hover */
+#tabs button:hover {
+    background-color: #ddd;
+}
+
+#tabs div div:hover div {
+    display: block;
+}
+
+#tabs div div div a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+}
+
+#title h1{
+    text-align: center;
+}
