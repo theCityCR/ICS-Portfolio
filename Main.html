@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Portfolio - Raymond Ouyang</title>
-    <link rel="stylesheet" href="./Main.css">
+    <link rel="stylesheet" href="Menu.css">
 </head>
 <body>
 <header>
@@ -12,50 +12,20 @@
             Portfolio by Raymond Ouyang
         </h1>
     </div>
-    <div id="tabs">
-        <button id="HomeButton" onclick="ll('Main.html')">
-            Home
-        </button>
-        <div id="tabsRight">
-            <button id="tutorials" onclick="ll('Tutorials.html')">
-                Tutorials
-            </button>
-            <button id="aboutMe" onclick="ll('AboutMe.html')">
-                About Me
-            </button>
-            <button onclick="ll('Bibliography.html')">
-                Bibliography
-            </button>
-        </div>
-    </div>
-    <div id="expandedMenu">
-        <div id="tutorialsExpandedMenu">
-            <button onclick="ll('OOP.html')">
-                OOP
-            </button>
-            <button onclick="ll('Arrays.html')">
-                Data Structures
-            </button>
-            <button onclick="ll('SearchAndSort.html')">
-                Search and Sort
-            </button>
-            <button onclick="ll('Recursion.html')">
-                Recursion
-            </button>
-        </div>
-        <div id="aboutMeExpandedMenu">
-            <button onclick="ll('Works.html')">
-                My Works
-            </button>
-            <button onclick="ll('Learning.html')">
-                Other Learning
-            </button>
-            <button onclick="ll('Achievements.html')">
-                My Achievements
-            </button>
+    <div class="navbar">
+        <a href="./Main.html">Home</a>
+        <div class="dropdown">
+            <button class="dropdown-button">Tutorials</button>
+            <div class="dropdown-content">
+                <a href="#">OOP Part 1</a>
+                <a href="#">OOP Part 2</a>
+                <a href="#">Arrays and ArrayLists</a>
+                <a href="">Search and Sort</a>
+                <a href="">Recursion</a>
+            </div>
         </div>
     </div>
 </header>
-<script src="Main.js"></script>
+<script src="Menu.js"></script>
 </body>
 </html>
