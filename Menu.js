@@ -18,7 +18,11 @@ function createMenu() {
     main.innerText = "Home";
     menu.appendChild(main);
     menu.appendChild(createTutorials());
-    // menu.appendChild(createAbout());
+    menu.appendChild(createAbout());
+    const bibliography = document.createElement("a");
+    bibliography.href = "./Bibliography.html";
+    bibliography.innerText = "Bibliography";
+    menu.appendChild(bibliography);
     return menu;
 }
 
@@ -34,8 +38,13 @@ function createTutorials() {
 }
 
 function createAbout() {
-    const aboutMe = document.createElement("div");
-    return aboutMe;
+    const aboutMeButtonText = "About Me";
+    const aboutMeContentInfo =
+        [   ["WhoIAm.html",         "Who I Am"],
+            ["Works.html",          "My Works"],
+            ["Achievements.html",   "Achievements"],
+            ["Learning.html",       "My Learning"]]
+    return createMenuContainers(aboutMeButtonText, aboutMeContentInfo);
 }
 
 function createMenuContainers(buttonText, contentInfo) {
