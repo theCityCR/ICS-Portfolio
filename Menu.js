@@ -14,7 +14,7 @@ function createMenu() {
     const menu = document.createElement("div");
     menu.classList.add("menu");
     const main = document.createElement("a");
-    main.href = "./index.html";
+    main.href = "./Main.html";
     main.innerText = "Home";
     menu.appendChild(main);
     menu.appendChild(createTutorials());
