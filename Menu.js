@@ -1,4 +1,16 @@
-document.addEventListener("DOMContentLoaded", createHeader);
+document.addEventListener("DOMContentLoaded", init);
+
+function init() {
+    addCSS();
+    createHeader();
+}
+
+function addCSS() {
+    const menu = document.createElement("link");
+    menu.rel = "stylesheet";
+    menu.href = "./Menu.css";
+    document.head.appendChild(menu);
+}
 
 function createHeader() {
     const header = document.createElement("header");
