@@ -40,7 +40,7 @@ function createTutorials() {
 function createAbout() {
     const aboutMeButtonText = "About Me";
     const aboutMeContentInfo =
-        [   ["WhoIAm.html",         "Who I Am"],
+        [   ["WhoAmI.html",         "Who Am I"],
             ["Works.html",          "My Works"],
             ["Achievements.html",   "Achievements"],
             ["Learning.html",       "My Learning"]]
