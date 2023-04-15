@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", init);
 
 function init() {
-    addCSS();
+    addCSSFile();
     createHeader();
 }
 
-function addCSS() {
+function addCSSFile() {
     const menu = document.createElement("link");
     menu.rel = "stylesheet";
     menu.href = "./Menu.css";
@@ -77,3 +77,4 @@ function createMenuContainers(buttonText, contentInfo) {
     container.append(content);
     return container;
 }
+
