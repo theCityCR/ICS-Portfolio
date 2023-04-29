@@ -29,12 +29,15 @@ function createMenu() {
     main.href = "./Main.html";
     main.innerText = "Home";
     menu.appendChild(main);
-    menu.appendChild(createTutorials());
-    menu.appendChild(createAbout());
+    const moreMenu = document.createElement("div");
+    moreMenu.classList.add("more-menu");
+    moreMenu.appendChild(createTutorials());
+    moreMenu.appendChild(createAbout());
     const bibliography = document.createElement("a");
     bibliography.href = "./Bibliography.html";
     bibliography.innerText = "Bibliography";
-    menu.appendChild(bibliography);
+    moreMenu.appendChild(bibliography);
+    menu.appendChild(moreMenu);
     return menu;
 }
 
@@ -53,7 +56,7 @@ function createAbout() {
     const aboutMeButtonText = "About Me";
     const aboutMeContentInfo =
         [   ["WhoAmI.html",         "Who Am I"],
-            ["Works.html",          "My Works"],
+            ["Works.html",          "My Projects"],
             ["Achievements.html",   "Achievements"],
             ["Learning.html",       "My Learning"]]
     return createMenuContainers(aboutMeButtonText, aboutMeContentInfo);

@@ -3,6 +3,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: #9dd8ef;
 }
 
 header {
@@ -50,6 +51,10 @@ header .menu-containers .menu-button {
     background-color: inherit;
     font-family: inherit;
     margin: 0;
+}
+
+.more-menu {
+    float: right;
 }
 
 header .menu a:hover, .menu-containers:hover .menu-button {
