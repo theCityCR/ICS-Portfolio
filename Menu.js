@@ -80,4 +80,3 @@ function createMenuContainers(buttonText, contentInfo) {
     container.append(content);
     return container;
 }
-
